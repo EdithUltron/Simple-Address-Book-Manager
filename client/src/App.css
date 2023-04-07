@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap');
+
+body{
+  font-family: 'Poppins';
+}
+
+@media screen and (min-width:600px) {
+.app-top{
+  height: 35vh;
+  overflow-y: hidden;
+}
+
+.app-bottom{
+  height: 65vh;
+  overflow: scroll;
+}
+
+}
+
+.container {
+  margin: 0 auto;
+  font-family: 'Poppins';
+}
+
+.heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.title{
+    color: #034f84;
+    margin-bottom: 2rem !important;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter input{
+  height: 50px;
+  padding-left: 10px;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form button {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.filter {
+display: flex;
+justify-content: space-between;
+padding: 0 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.contactlist-name{
+  font-size: 2rem;
+  color: #034f84;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.item-idx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: grey;
+}
+
+.contact-formitem {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 10px; */
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.contact-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-mobile {
+  font-size: 1rem;
+}
+
+.actions {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.edit-btn {
+  padding: 5px 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight:300;
+  font-size: 1rem;
+}
+.save-btn {
+  padding: 5px 50px;
+  height: 50px;
+  margin-right: 10px;
+  font-weight:300;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sav-btn {
+  padding: 5px 50px;
+  height: 50px;
+  margin-right: 10px;
+  font-weight:300;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-list{
+  overflow-y: scroll;
+}
+
+.delete-btn {
+  padding: 15px 40px;
+  font-size: .9rem;
+  font-weight:300;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-data{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.form-data input{
+  height: 3rem;
+}
+
+@media screen and (max-width:600px) {
+  .contact-item{
+    flex-direction: column;
+  }
+
+  .form-data input {
+    padding-left: 1rem;
+  }
+
+  .form-data,.actions{
+    width: 100%;
+  }
+
+  .contact-formitem{
+    flex-direction: column;
+  }
+  .contact-formitem .form-data{
+    flex-direction: column;
+  }
+  .contact-formitem .form-data .form-group{
+    margin-top: 5px;
+  }
+
+  .filter{
+    flex-direction: column;
+  }
+
+  .contactlist-name{
+    font-size: 1.5rem;
+  }
+  
+}
